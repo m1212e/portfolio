@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Signika';
+	src: url('fonts/Signika-VariableFont_wght') format('ttf') tech('variations');
+	font-weight: 300 700;
+}
+
+:root {
+	font-family: Signika;
+}
