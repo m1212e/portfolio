@@ -75,7 +75,7 @@
 		{
 			name: 'Svelte',
 			icon: SvelteLogo,
-			text: 'Svelte was the third component frontend framework I learned. Since I already knew Angular and React I immediately realised how easy Svelte made the frontend development process. I picked it up really quickly and since then it is my framework of choice when it comes to web frontend development. I\'ve implemented a lot of projects with Svelte and SvelteKit, in fact, the site you\'re currently on is made with SvelteKit. It is the frontend framework I\'m the most familiar with.',
+			text: 'Svelte was the third component frontend framework I learned. Since I already knew Angular and React I immediately realised how easy Svelte made the frontend development process. I picked it up really quickly and since then it is my framework of choice when it comes to web frontend development. I\'ve implemented a lot of projects with Svelte and SvelteKit, in fact, the site you\'re currently on is made with SvelteKit. It is the frontend framework I\'m the most familiar with. Especially the SSG/SSR capabilities of SvelteKit are really useful and I\'m looking forward to see where this trend and the framework is going to go.',
 			languages: ['javascript', 'typescript']
 		},
 		{
@@ -99,37 +99,37 @@
 		{
 			name: 'Socket.io',
 			icon: SocketioLogo,
-			text: 'Lorem Ipsum',
+			text: 'For various small projects and a web based game I developed I used Socket.io to implement realtime communication between the client and the server. The ease of use, fallback mechanisms and extra features like rooms make it a very enjoyable tool to use whenever it comes to realtime apps.',
 			languages: ['javascript', 'typescript']
 		},
 		{
 			name: 'Prisma',
 			icon: PrismaLogo,
-			text: 'Lorem Ipsum',
+			text: 'For a small side projects which required a database I used Prisma. Even though I didn\'t dug too deep into it I found the readability of the schema and the resulting type safety very enjoyable to use and had a good developer experience.',
 			languages: ['typescript']
 		},
 		{
 			name: 'npm',
 			icon: NPMLogo,
-			text: 'Lorem Ipsum',
+			text: 'When it comes to dependency and project management in the web world there is no way around npm. As the first package manager I actually got to know well I quickly enjoyed the ease of use, the CLI and standardised way of structuring project dependencies. Although there are alternatives like pnpm, which are faster, npm provides super useful features and I highly appreciate it\'s simplicity. I\'ve used it in countless projects.',
 			languages: ['javascript', 'typescript']
 		},
 		{
 			name: 'ESLint',
 			icon: ESLintLogo,
-			text: 'Lorem Ipsum',
+			text: 'In combination with Prettier as a code formatter I use ESLint to enforce a consistent code style in almost all of my projects. I really enjoy the flexibility of ESLint and hat it can be configured to fit the needs of almost any project. As I experienced it\'s often worth to take some time to configure it properly, because the time saved during development is almost always more than the setup took.',
 			languages: ['javascript', 'typescript']
 		},
 		{
 			name: 'Tokio',
 			icon: TokioLogo,
-			text: 'Lorem Ipsum',
+			text: 'When it comes to async Rust, Tokio is the moste used and most popular runtime. Therefore when I learned async Rust I encountered Tokio along the way. I initially found async Rust and Tokio hard to learn, but after digging into it I really liked working with it since it abstracts away the really tough parts of writing an async program. I\'ve used Tokio in a few projects already and are very happy with its features and performance. Coming from Go I especially like the Tokio channels for passing data between async contexts.',
 			languages: ['rust']
 		},
 		{
 			name: 'React',
 			icon: ReactLogo,
-			text: 'Lorem Ipsum',
+			text: 'As it is the most popular component framework I learned React while implementing a few side and university projects. I liked the huge ecosystem and community that comes with React, which make it very easy to get going. I also worked on a React Native project with Expo during university, it was impressive how easy it is to develop an application for multiple platforms with the same tool.',
 			languages: ['javascript', 'typescript']
 		}
 	];
@@ -139,7 +139,7 @@
 
 <div class="flex w-100 justify-between mb-8">
 	<div>
-		<h1 id="career" class="font-bold text-4xl">Skills</h1>
+		<h1 id="skills" class="font-bold text-4xl">Skills</h1>
 		<p>On the right side of each entry you can see associated tools that I also worked with.</p>
 	</div>
 	<div class="flex flex-col sm:flex-row items-center">

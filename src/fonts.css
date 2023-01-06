@@ -5,5 +5,6 @@
 }
 
 :root {
-	font-family: Signika;
+	/* font-family: Signika; */
+	font-family: 'Signika', Calibri,  'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
