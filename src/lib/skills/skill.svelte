@@ -1,50 +1,53 @@
 <script lang="ts">
 	import Chevron from '../../icons/dark-chevron-down.svg';
+	import { createEventDispatcher } from 'svelte';
 
-	export let lang: {
+	const dispatch = createEventDispatcher();
+
+	export let item: {
 		name: string;
 		icon: string;
 		text: string;
 	};
 
-	export let frameworks: {
+	export let crossrefs: {
 		name: string;
 		icon: string;
-		languages: string[];
 	}[];
 
 	let expanded = false;
 </script>
 
 <button
-	class="border-2 border-black rounded-xl p-4 pb-0 flex flex-col items-center"
+	id={item.name}
+	class="border-2 border-black rounded-xl p-4 pb-0 flex flex-col items-center my-3 w-full lg:w-4/5"
 	on:click={() => (expanded = !expanded)}
 >
-	<div class="flex">
-		<img src={lang.icon} alt="language logo" class="h-20 w-20" />
+	<div class="flex w-full">
+		<img src={item.icon} alt="language logo" class="h-20 w-20" />
 		<div class="content divide-x divide-black flex" class:expanded>
-			<div class="flex items-start ml-3 flex-col">
+			<div class="flex items-start ml-3 flex-col w-4/5">
 				<h3 class="font-bold text-2xl">
-					{lang.name}
+					{item.name}
 				</h3>
-				<p class="w-96 text-left">
-					{lang.text}
+				<p class="text-left mr-4">
+					{item.text}
 				</p>
 			</div>
-			<div class="pl-4">
-				{#each frameworks.filter( (f) => f.languages.find((l) => l.toLowerCase() == lang.name.toLowerCase()) ) as framework}
-					<div class="flex items-center">
-						{#if framework.icon}
-							<img
-								class="h-6 w-6 mr-2 pt-1"
-								src={framework.icon}
-								alt="{framework.name} logo"
-							/>
-						{/if}
-						{framework.name}
-					</div>
-				{/each}
-			</div>
+			{#if crossrefs.length > 0}
+				<div class="pl-4">
+					{#each crossrefs as ref}
+						<div class="flex items-center hover:underline">
+							<button class="flex" on:click={() => dispatch('refClicked', ref)}>
+								{#if ref.icon}
+									<img class="h-6 w-6 mr-2 pt-1" src={ref.icon} alt="{ref.name} logo" />
+								{/if}
+								{ref.name}
+							</button>
+						</div>
+					{/each}
+				</div>
+			{/if}
 		</div>
 	</div>
 	<img class="chevron" src={Chevron} alt="chevron to indicate expansion state" class:expanded />
