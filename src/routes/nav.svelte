@@ -19,10 +19,10 @@
 
 	<img class="logo" src={Logo} alt="logo" class:expanded />
 	<div class="links" class:expanded>
-		<a href="#home">Home</a>
-		<a href="#career">Career</a>
-		<a href="#skills">Skills</a>
-		<a href="#showcase">Showcase</a>
+		<a on:click={close} href="#home">Home</a>
+		<a on:click={close} href="#career">Career</a>
+		<a on:click={close} href="#skills">Skills</a>
+		<a on:click={close} href="#showcase">Showcase</a>
 		<a class="mt-3" href="https://github.com/m1212e"><img class="h-7" src={GitHub} alt="github logo"></a>
 	</div>
 </nav>

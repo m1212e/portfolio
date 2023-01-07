@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Chevron from '../../icons/dark-chevron-down.svg';
 	import { createEventDispatcher } from 'svelte';
+	import { onMount } from 'svelte';
 
 	const dispatch = createEventDispatcher();
 
@@ -10,22 +11,32 @@
 		text: string;
 	};
 
-	export let crossrefs: {
+	export let refs: {
 		name: string;
 		icon: string;
 	}[];
 
 	let expanded = false;
+	let contentElement: HTMLDivElement;
+	let needsExpandButton = true;
+
+	onMount(() => {
+		if (contentElement.clientHeight < contentElement.scrollHeight) {
+			needsExpandButton = true;
+		} else {
+			needsExpandButton = false;
+		}
+	});
 </script>
 
 <button
 	id={item.name}
-	class="border-2 border-black rounded-xl p-4 pb-0 flex flex-col items-center my-3 w-full lg:w-4/5"
+	class="border-2 border-black rounded-xl p-4 flex flex-col items-center my-3 w-full lg:w-4/5 {needsExpandButton ? 'pb-0' : ''}}"
 	on:click={() => (expanded = !expanded)}
 >
 	<div class="flex w-full">
-		<img src={item.icon} alt="language logo" class="h-20 w-20" />
-		<div class="content divide-x divide-black flex" class:expanded>
+		<img src={item.icon} alt="{item.name} logo" class="h-20 w-20" />
+		<div class="content divide-x divide-black flex" class:expanded bind:this={contentElement}>
 			<div class="flex items-start ml-3 flex-col w-4/5">
 				<h3 class="font-bold text-2xl">
 					{item.name}
@@ -34,9 +45,9 @@
 					{item.text}
 				</p>
 			</div>
-			{#if crossrefs.length > 0}
+			{#if refs.length > 0}
 				<div class="pl-4">
-					{#each crossrefs as ref}
+					{#each refs as ref}
 						<div class="flex items-center hover:underline">
 							<button class="flex" on:click={() => dispatch('refClicked', ref)}>
 								{#if ref.icon}
@@ -50,7 +61,9 @@
 			{/if}
 		</div>
 	</div>
-	<img class="chevron" src={Chevron} alt="chevron to indicate expansion state" class:expanded />
+	{#if needsExpandButton}
+		<img class="chevron" src={Chevron} alt="chevron to indicate expansion state" class:expanded />
+	{/if}
 </button>
 
 <style>
