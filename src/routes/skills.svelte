@@ -43,13 +43,11 @@
 	import BootstrapLogo from '../images/bootstrap-logo.png';
 	import Skill from '../lib/skills/skill.svelte';
 
-	//TODO: I really like umformulieren
-
 	const languages = [
 		{
 			name: 'JavaScript',
 			icon: JsLogo,
-			text: 'In the first semesters of university, JS was one of the languages taught. As THE langauge of the web, I learned the basics in combination with HTML and CSS and built a few Websites from scratch. During the pandemic I spent a lot of time learning JS, not only in the web but also runtimes like Node.js and frameworks like Express. JS is one of the languages I know best and I am always looking for new ways to improve my skills in the JS ecosystem.'
+			text: 'In the first semesters of university, JS was one of the languages taught. As THE language of the web, I learned the basics in combination with HTML and CSS and built a few Websites from scratch. During the pandemic I spent a lot of time learning JS, not only in the web but also runtimes like Node.js and frameworks like Express. JS is one of the languages I know best and I am always looking for new ways to improve my skills in the JS ecosystem.'
 		},
 		{
 			name: 'TypeScript',
@@ -59,7 +57,7 @@
 		{
 			name: 'Go',
 			icon: GoLogo,
-			text: "After developing in JS/TS for the major part of my university and side projects, I wanted to learn a faster, more low level, compiled language. Since Go is an easy to learn language, I picked it up for some side projects and wrote the web backend for my bachelors thesis, which focused around web app performance, with the Fiber framework. I worked with the standard libary a lot and got into testing soon after. I really enjoyed using Go for it's simplicity, large standard library and fast performance out of the box."
+			text: "After developing in JS/TS for the major part of my university and side projects, I wanted to learn a faster, more low level, compiled language. Since Go is an easy to learn language, I picked it up for some side projects and wrote the web backend for my bachelors thesis, which focused around web app performance, with the Fiber framework. I worked with the standard library a lot and got into testing soon after. I really enjoyed using Go for it's simplicity, large standard library and fast performance out of the box."
 		},
 		{
 			name: 'Rust',
@@ -69,7 +67,7 @@
 		{
 			name: 'Java',
 			icon: JavaLogo,
-			text: 'As the first programming language I ever learned, Java has taught me the basics of programming. Starting out with writing plugins for Minecraft servers with the Bukkit API, I continued to develop some small applications with Swing. Later at university Java was taught to make us familiar with consepts like OOP and functional programming. After a pause I picked it up again at weiyu digital GmbH where I learned how to use the Spring framework, how to write tests and how to use Gradle as a build tool.'
+			text: 'As the first programming language I ever learned, Java has taught me the basics of programming. Starting out with writing plugins for Minecraft servers with the Bukkit API, I continued to develop some small applications with Swing. Later at university Java was taught to make us familiar with concepts like OOP and functional programming. After a pause I picked it up again at weiyu digital GmbH where I learned how to use the Spring framework, how to write tests and how to use Gradle as a build tool.'
 		},
 		{
 			name: 'C++',
@@ -99,13 +97,13 @@
 		{
 			name: 'Svelte',
 			icon: SvelteLogo,
-			text: "Svelte was the third component frontend framework I learned. Since I already knew Angular and React I immediately realised how easy Svelte made the frontend development process. I picked it up really quickly and since then it is my framework of choice when it comes to web frontend development. I've implemented a lot of projects with Svelte and SvelteKit, in fact, the site you're currently on is made with SvelteKit. It is the frontend framework I'm the most familiar with. Especially the SSG/SSR capabilities of SvelteKit are really useful and I'm looking forward to see where this trend and the framework is going to go.",
+			text: "Svelte was the third component frontend framework I learned. Since I already knew Angular and React I immediately realized how easy Svelte made the frontend development process. I picked it up quickly and since then it is my framework of choice when it comes to web frontend development. I've implemented a lot of projects with Svelte and SvelteKit, in fact, the site you're currently on is made with SvelteKit. It is the frontend framework I'm the most familiar with. Especially the SSG/SSR capabilities of SvelteKit are very useful and I'm looking forward to see where this trend and the framework is going to go.",
 			languages: ['javascript', 'typescript']
 		},
 		{
 			name: 'Cypress',
 			icon: CypressLogo,
-			text: 'During my time working as a fullstack developer at weiyu digital GmbH I learned about Cypress. I was tasked to write e2e tests for quite a big web app under time pressure. Before I suggested Cypress, the team used Protractor to write e2e tests for their apps. I had to convince the CTO of our customer and my boss to make the switch to Cypress. As it turned out, Cypress was the right tool for the choice and the tests could be implemented within the set deadline. I really enjoyed the tooling and extensive docs of Cypress.',
+			text: 'During my time working as a fullstack developer at weiyu digital GmbH I learned about Cypress. I was tasked to write e2e tests for quite a big web app under time pressure. Before I suggested Cypress, the team used Protractor to write e2e tests for their apps. I had to convince the CTO of our customer and my boss to make the switch to Cypress. As it turned out, Cypress was the right tool for the choice and the tests could be implemented within the set deadline. I appreciated the tooling and extensive docs of Cypress.',
 			languages: ['javascript']
 		},
 		{
@@ -135,19 +133,19 @@
 		{
 			name: 'npm',
 			icon: NPMLogo,
-			text: "When it comes to dependency and project management in the web world there is no way around npm. As the first package manager I actually got to know well I quickly enjoyed the ease of use, the CLI and standardised way of structuring project dependencies. Although there are alternatives like pnpm, which are faster, npm provides super useful features and I highly appreciate it's simplicity. I've used it in countless projects.",
+			text: "When it comes to dependency and project management in the web world there is no way around npm. As the first package manager I actually got to know well I quickly enjoyed the ease of use, the CLI and standardized way of structuring project dependencies. Although there are alternatives like pnpm, which are faster, npm provides super useful features and I highly appreciate it's simplicity. I've used it in countless projects.",
 			languages: ['javascript', 'typescript']
 		},
 		{
 			name: 'ESLint',
 			icon: ESLintLogo,
-			text: "In combination with Prettier as a code formatter I use ESLint to enforce a consistent code style in almost all of my projects. I really enjoy the flexibility of ESLint and hat it can be configured to fit the needs of almost any project. As I experienced it's often worth to take some time to configure it properly, because the time saved during development is almost always more than the setup took.",
+			text: "In combination with Prettier as a code formatter I use ESLint to enforce a consistent code style in almost all of my projects. I like the flexibility of ESLint and hat it can be configured to fit the needs of almost any project. As I experienced it's often worth to take some time to configure it properly, because the time saved during development is almost always more than the setup took.",
 			languages: ['javascript', 'typescript']
 		},
 		{
 			name: 'Tokio',
 			icon: TokioLogo,
-			text: "When it comes to async Rust, Tokio is the moste used and most popular runtime. Therefore when I learned async Rust I encountered Tokio along the way. I initially found async Rust and Tokio hard to learn, but after digging into it I really liked working with it since it abstracts away the really tough parts of writing an async program. I've used Tokio in a few projects already and are very happy with its features and performance. Coming from Go I especially like the Tokio channels for passing data between async contexts.",
+			text: "When it comes to async Rust, Tokio is the most used and most popular runtime. Therefore when I learned async Rust I encountered Tokio along the way. I initially found async Rust and Tokio hard to learn, but after digging into it I really liked working with it since it abstracts away the tough parts of writing an async program. I've used Tokio in a few projects already and are very happy with its features and performance. Coming from Go I especially like the Tokio channels for passing data between async contexts.",
 			languages: ['rust']
 		},
 		{
@@ -171,7 +169,7 @@
 		{
 			name: 'PostgreSQL',
 			icon: PostgresLogo,
-			text: 'Throughout various projects I used PostgreSQL as a database. I really like the compatibility and the huge ecosystem around it. I used it in my bachelors thesis to store data in a very performant way and found it to be a very good choice for a database. I also used it in a professional context at weiyu digital GmbH.',
+			text: 'Throughout various projects I used PostgreSQL as a database. I like the compatibility and the huge ecosystem around it. I used it in my bachelors thesis to store data in a very performant way and found it to be a very good choice for a database. I also used it in a professional context at weiyu digital GmbH.',
 			languages: []
 		},
 		{
@@ -201,13 +199,13 @@
 		{
 			name: 'Spigot',
 			icon: SpigotLogo,
-			text: 'I found my way into programming through Minecraft and the Craftbukkit/Spigot project by writing my own plugins for a Minecraft server. I spent countless hours in the game and learned the basics of programming by implementing administartive and minigame plugins to create a unique experience for the players of my server. It was a lot of fun and I still benefit of the things I learned back then.',
+			text: 'I found my way into programming through Minecraft and the CraftBukkit/Spigot project by writing my own plugins for a Minecraft server. I spent countless hours in the game and learned the basics of programming by implementing administrative and minigame plugins to create a unique experience for the players of my server. It was a lot of fun and I still benefit of the things I learned back then.',
 			languages: ['java']
 		},
 		{
 			name: 'Selfhosting',
 			icon: SelfhostedLogo,
-			text: "Through r/selfhosted I got interested in deploying services I use on a day to day basis on my own hardware. Using a RaspberryPi as a small server at home I got into tools like Docker and Cloudflare tunnels to flexibly run and access services I need for myself or projects I work on. I got to experience a lot of advantages from this approch, mainly the low cost and high flexibility. I learned a lot in the process and I'm always looking for new things in the field.",
+			text: "Through r/selfhosted I got interested in deploying services I use on a day to day basis on my own hardware. Using a RaspberryPi as a small server at home I got into tools like Docker and Cloudflare tunnels to flexibly run and access services I need for myself or projects I work on. I got to experience a lot of advantages from this approach, mainly the low cost and high flexibility. I learned a lot in the process and I'm always looking for new things in the field.",
 			languages: []
 		},
 		{
@@ -219,7 +217,7 @@
 		{
 			name: 'gRPC',
 			icon: gRPCLogo,
-			text: 'I always found the concept of remote procedure calls for network communication very interesting. The idea of taking a familiar concept, the function call, and applying it to network communication is imo very developer friendly. Before implementing my own RPC framework to learn about the concept, I played around with gRPC and protobufs to learn about them, used them for a small hobby project and really liked their approach of network communication.',
+			text: 'I always found the concept of remote procedure calls for network communication very interesting. The idea of taking a familiar concept, the function call, and applying it to network communication is imo very developer friendly. Before implementing my own RPC framework to learn about the concept, I played around with gRPC and protobufs to learn about them, used them for a small hobby project and liked their approach of network communication.',
 			languages: ['typescript', 'rust', 'go']
 		},
 		{
@@ -267,13 +265,13 @@
 		{
 			name: 'Electron',
 			icon: ElectronLogo,
-			text: 'In a project where a GUI around a CLI was needed I used Electron to create a cross platform desktop app. I really liked the combination of web and Node.js to to implement native features, it allowed to get productive really quickly.',
+			text: 'In a project where a GUI around a CLI was needed I used Electron to create a cross platform desktop app. I liked the combination of web and Node.js to to implement native features, it allowed to get productive pretty quick.',
 			languages: ['javascript', 'typescript']
 		},
 		{
 			name: 'Three.js',
 			icon: ThreeJSLogo,
-			text: 'For two projects at university I used 3D frameworks. Besides Babylon.js, Three.js/React Three Fiber were used to implement a draggable car as a control concept for a selfdriving car.',
+			text: 'For two projects at university I used 3D frameworks. Besides Babylon.js, Three.js/React Three Fiber were used to implement a draggable car as a control concept for a self-driving car.',
 			languages: ['javascript', 'typescript']
 		},
 		{
@@ -291,7 +289,7 @@
 		{
 			name: 'Bootstrap CSS',
 			icon: BootstrapLogo,
-			text: 'While learning web development I used Bootstraps premade components throughout various projects. The utility classes Bootstrap offered were very helpful and I familiarised myself with the concept of having utility classes instead of custom writing styles for every occurrance.',
+			text: 'While learning web development I used Bootstraps pre made components throughout various projects. The utility classes Bootstrap offered were very helpful and I familiarized myself with the concept of having utility classes instead of custom writing styles for every occurrence.',
 			languages: ['javascript']
 		}
 	].sort((a, b) => a.name.localeCompare(b.name));
