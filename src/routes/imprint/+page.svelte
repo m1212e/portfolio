@@ -7,7 +7,7 @@ Logentwiete 25<br />
 24558 Henstedt-Ulzburg</p>
 
 <h2>Kontakt</h2>
-<p>E-Mail: felix@twt-coolworks.de</p>
+<p>E-Mail: m1212e@proton.me</p>
 
 <h2>Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h2>
 <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
