@@ -17,7 +17,7 @@ jobs:
         uses: actions/upload-artifact@main
         with:
           name: "github-pages"
-          path: "build/""
+          path: "build/"
           retention-days: "1"
   deploy:
     needs: build
