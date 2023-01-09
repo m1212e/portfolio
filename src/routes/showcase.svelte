@@ -23,7 +23,7 @@
 </p>
 
 <h1 class="font-bold text-4xl mt-14 mb-6">I got an idea</h1>
-<div style="height: 30rem;" class="shadow-lg overflow-scroll my-10">
+<div style="height: 30rem;" class="shadow-lg overflow-scroll my-10 max-w-lg">
 	<img src={IdeaAppScreenshot1} alt="screenshot of my idea app" />
 	<img class="my-2" src={IdeaAppScreenshot2} alt="screenshot of my idea app" />
 	<img src={IdeaAppScreenshot3} alt="screenshot of my idea app" />
@@ -39,8 +39,8 @@
 </p>
 
 <h1 class="font-bold text-4xl mt-14 mb-6">Das Gesicht der Liebe</h1>
-<div style="height: 30rem;" class="shadow-lg overflow-scroll mb-10">
-	<img src={DGDLScreenshot} alt="screenshot of my timetracker app" />
+<div style="height: 30rem;" class="shadow-lg overflow-scroll mb-10 flex justify-center">
+	<img style="width: 100%; height: fit-content;" class="" src={DGDLScreenshot} alt="screenshot of das-gesicht-der-liebe.de" />
 </div>
 <p>
 	"Das Gesicht der Liebe" - The face of Love is a <a
