@@ -22,7 +22,8 @@
 	import FiberLogo from '../images/fiber-logo.svg';
 	import GORMLogo from '../images/GORM-logo.svg';
 	import PostgresLogo from '../images/postgres-logo.svg';
-	import GCPLogo from '../images/gcp-logo.svg';
+	import CloudIcon from '../icons/cloud.svg';
+	import CoffeeIcon from '../icons/coffee.svg';
 	import GitHubLogo from '../icons/dark-github.svg';
 	import NodejsLogo from '../images/nodejs-logo.svg';
 	import SpigotLogo from '../images/spigot-logo.png';
@@ -36,6 +37,10 @@
 	import LSPLogo from '../images/lsp-logo.svg';
 	import MQTTLogo from '../images/mqtt-logo.svg';
 	import ElectronLogo from '../images/electron-logo.svg';
+	import ThreeJSLogo from '../images/threejs-logo.svg';
+	import SequelizeLogo from '../images/sequelize-logo.svg';
+	import AWSCDKLogo from '../images/AWS-CDK-logo.svg';
+	import BootstrapLogo from '../images/bootstrap-logo.png';
 	import Skill from '../lib/skills/skill.svelte';
 
 	//TODO: I really like umformulieren
@@ -59,7 +64,7 @@
 		{
 			name: 'Rust',
 			icon: RustLogo,
-			text: "While developing on a side project where I hit the limit of the used tools and languages I made the decision to take a look at Rust. Since it's a steep learning curve it took a few attempts for me to really click with the language but now I absolutely love it. To me the language design checks a lot of boxes and I enjoy writing it, even if the progress is noticeably slower than with other languages. On various projects I worked with the standard library, async Rust with Tokio, serde and a few web servers. I also used Rust to write my own parser."
+			text: "While developing on a side project where I hit the limit of the used tools and languages I made the decision to take a look at Rust. Since it's a steep learning curve it took a few attempts for me to really click with the language but now I absolutely love it. To me the language design checks a lot of boxes and I enjoy writing it, even if the progress is noticeably slower than with other languages. On various projects I worked with the standard library, cargo, async Rust with Tokio, serde and a few web servers. I also used Rust to write my own parser."
 		},
 		{
 			name: 'Java',
@@ -171,7 +176,7 @@
 		},
 		{
 			name: 'Google Cloud Platform',
-			icon: GCPLogo,
+			icon: CloudIcon,
 			text: 'Some of my projects were hosted on the Google Cloud Platform. I used v-servers for smaller things and to learn about hosting, linux and deployment and used GCPs Cloud Run to deploy a automatic scaling version of a web api. I used GCPs build tools to auto deploy containers from a GitHub repo and the pub sub service to periodically run database cleanups. Although I find the GCPs web UI to be a bit clunky I enjoyed using and learning the Google Cloud Platform.',
 			languages: []
 		},
@@ -189,7 +194,7 @@
 		},
 		{
 			name: 'Spring Boot',
-			icon: undefined,
+			icon: CoffeeIcon,
 			text: 'Spring Boot is a framework for Java that makes it easy to create REST APIs. I mostly used it in a professional context while working as a full stack developer.',
 			languages: ['java']
 		},
@@ -214,12 +219,12 @@
 		{
 			name: 'gRPC',
 			icon: gRPCLogo,
-			text: 'I always found the concept of remote procedure calls for network communication very interesting. The idea of taking a familiar concept, the function call, and applying it to network communication is imo very developer friendly. Before implementing my own RPC framework to learn about the concept, I played around with gRPC and protobufs to learn about them and used them for a small hobby project.',
+			text: 'I always found the concept of remote procedure calls for network communication very interesting. The idea of taking a familiar concept, the function call, and applying it to network communication is imo very developer friendly. Before implementing my own RPC framework to learn about the concept, I played around with gRPC and protobufs to learn about them, used them for a small hobby project and really liked their approach of network communication.',
 			languages: ['typescript', 'rust', 'go']
 		},
 		{
 			name: 'Cloudflare',
-			icon: undefined,
+			icon: CloudIcon,
 			text: "When it comes to hosting, protecting and administrating websites, Cloudflare is my go to service provider. I use it for it's simplicity and security features. For accessing my selfhosted services I use Clouflares tunnel service which allows easy access to my home server.",
 			languages: []
 		},
@@ -263,7 +268,31 @@
 			name: 'Electron',
 			icon: ElectronLogo,
 			text: 'In a project where a GUI around a CLI was needed I used Electron to create a cross platform desktop app. I really liked the combination of web and Node.js to to implement native features, it allowed to get productive really quickly.',
-			languages: ["javascript", "typescript"]
+			languages: ['javascript', 'typescript']
+		},
+		{
+			name: 'Three.js',
+			icon: ThreeJSLogo,
+			text: 'For two projects at university I used 3D frameworks. Besides Babylon.js, Three.js/React Three Fiber were used to implement a draggable car as a control concept for a selfdriving car.',
+			languages: ['javascript', 'typescript']
+		},
+		{
+			name: 'Sequelize',
+			icon: SequelizeLogo,
+			text: 'While implementing a backend with TypeScript and AWS Lambda I used Sequelize to manage the database connection and queries. With sequelize-typescript it was easy to use the TypeScript type system to define the database models.',
+			languages: ['typescript']
+		},
+		{
+			name: 'AWS CDK',
+			icon: AWSCDKLogo,
+			text: 'To count pieces in a warehouse I implemented a serverless backend with Lambda, Timestream, Aurora Serverless and IoT Core. To manage the infrastructure I used the AWS CDK.',
+			languages: ['typescript']
+		},
+		{
+			name: 'Bootstrap CSS',
+			icon: BootstrapLogo,
+			text: 'While learning web development I used Bootstraps premade components throughout various projects. The utility classes Bootstrap offered were very helpful and I familiarised myself with the concept of having utility classes instead of custom writing styles for every occurrance.',
+			languages: ['javascript']
 		}
 	].sort((a, b) => a.name.localeCompare(b.name));
 

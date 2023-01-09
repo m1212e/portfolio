@@ -2,6 +2,7 @@
 	import Menu from '../icons/menu.svg';
 	import GitHub from '../icons/dark-github.svg';
 	import Logo from '../images/logo.svg';
+	import { base } from '$app/paths';
 
 	let expanded = false;
 
@@ -19,11 +20,13 @@
 
 	<img class="logo" src={Logo} alt="logo" class:expanded />
 	<div class="links" class:expanded>
-		<a on:click={close} href="#home">Home</a>
-		<a on:click={close} href="#career">Career</a>
-		<a on:click={close} href="#skills">Skills</a>
-		<a on:click={close} href="#showcase">Showcase</a>
-		<a class="mt-3" href="https://github.com/m1212e"><img class="h-7" src={GitHub} alt="github logo"></a>
+		<a on:click={close} href={base + '/#home'}>Home</a>
+		<a on:click={close} href={base + '/#career'}>Career</a>
+		<a on:click={close} href={base + '/#skills'}>Skills</a>
+		<a on:click={close} href={base + '/#showcase'}>Showcase</a>
+		<a class="mt-3" href="https://github.com/m1212e"
+			><img class="h-7" src={GitHub} alt="github logo" /></a
+		>
 	</div>
 </nav>
 

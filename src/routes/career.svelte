@@ -13,9 +13,9 @@
 <div class="flex items-center">
 	<div class="bubble">2018</div>
 	<p class="ml-5 text-xl">
-		Started studying Computer Science at the <a
+		Started studying Human Machine Interaction at the <a
 			class="underline"
-			href="https://www.hochschule-ruhr-west.de/"
+			href="https://en.hochschule-ruhr-west.de/study/degree-programmes/bachelor/human-machine-interaction/"
 			>Hochschule Ruhr-West, University of Applied Sciences</a
 		> in Bottrop, NRW, Germany.
 	</p>
