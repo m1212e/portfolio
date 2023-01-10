@@ -12,7 +12,7 @@
 </div>
 <p>
 	The above image shows the landing page of my app "Timetracker". I built it as a case study for my
-	Bachelors thesis to examine a Web apps performance using various technologies. The app was
+	Bachelors thesis to examine a web apps performance using various technologies. The app was
 	implemented with SvelteKit as a progressive web app, installable and fully functional when
 	offline. It featured user accounts, syncing across devices, sharing data between user accounts,
 	exporting into various formats like excel templates and of course: Tracking worktime. After
@@ -29,7 +29,7 @@
 	<img src={IdeaAppScreenshot3} alt="screenshot of my idea app" />
 </div>
 <p>
-	I got an idea was a React Native mobile app developed as a project for university. Using Firebase
+	"I got an idea" was a React Native mobile app developed as a project for university. Using Firebase
 	as a backend it allowed for creation and categorization of ideas, bringing together people who
 	have ideas for IT projects and those who have the skills to implement them. It featured user
 	accounts, filtering by categories, account customization and a realtime chat where people could
@@ -53,7 +53,7 @@
 	low as possible, I decided to selfhost the headless CMS (Directus) as a Docker container on my RaspberryPi
 	and grant her access via Cloudflare Tunnels. Then I created a frontend app and used SvelteKits prerendering
 	functionality to generate static HTML files from the Directus contents. To trigger a rebuild and deploy
-	whenever she makes changes, I set up Cloudflare hosting and configured a Webhook. She was very happy
+	whenever she makes changes, I set up Cloudflare hosting and configured a webhook. She was very happy
 	with the results and I was happy to help her.
 </p>
 
@@ -61,8 +61,8 @@
 <p>
 	<a class="underline" href="https://github.com/m1212e/easy-rpc">easy-rpc</a> is a rpc framework for
 	the web. Initially started to learn about parsers and the Go programming language I continued working on it and by now it is an actually useable RPC framework based on HTTP.
-    Throughout the process I switched to Rust, which was a really good decision, since I really started appreciating the language and its features. I learned a lot with this project
-    and had a lot of fun since I needed to solve a lot of problems I had never encountered before. I am still working on it and plan to add more features in the future.
+    Throughout the process I switched to Rust, which was a good decision, I really started appreciating the language and its features. I learned so much with this project
+    and had a lot of fun since I needed to solve problems I had never encountered before. I am still working on it and plan to add more features in the future.
     But not only the parser and transpiler are written in Rust, even the web server serving incoming rpc requests is built with Rust. Since the tool should support TypeScript, I
     created a wrapper to enable usage via the node-api which allows developers to write native addons for Node.js.
     The tool also provides a VSCode addon and a language server based on the Microsoft Language Server Protocol to support the developers while they are writing their code.
