@@ -41,13 +41,14 @@
 	import SequelizeLogo from '../images/sequelize-logo.svg';
 	import AWSCDKLogo from '../images/AWS-CDK-logo.svg';
 	import BootstrapLogo from '../images/bootstrap-logo.png';
+	import PackageIcon from '../icons/package.svg';
 	import Skill from '../lib/skills/skill.svelte';
 
 	const languages = [
 		{
 			name: 'JavaScript',
 			icon: JsLogo,
-			text: 'In the first semesters of university, JS was one of the languages taught. As THE language of the web, I learned the basics in combination with HTML and CSS and built a few Websites from scratch. During the pandemic I spent a lot of time learning JS, not only in the web but also runtimes like Node.js and frameworks like Express. JS is one of the languages I know best and I am always looking for new ways to improve my skills in the JS ecosystem.'
+			text: 'In the first semesters of university, JavaScript was one of the languages taught. As THE language of the web, I learned the basics in combination with HTML and CSS and built a few Websites from scratch. During the pandemic I spent a lot of time learning JS, not only in the web but also runtimes like Node.js and frameworks like Express. JS is one of the languages I know best and I am always looking for new ways to improve my skills in the JS ecosystem.'
 		},
 		{
 			name: 'TypeScript',
@@ -57,17 +58,17 @@
 		{
 			name: 'Go',
 			icon: GoLogo,
-			text: "After developing in JS/TS for the major part of my university and side projects, I wanted to learn a faster, more low level, compiled language. Since Go is an easy to learn language, I picked it up for some side projects and wrote the web backend for my bachelors thesis, which focused around web app performance, with the Fiber framework. I worked with the standard library a lot and got into testing soon after. I really enjoyed using Go for it's simplicity, large standard library and fast performance out of the box."
+			text: "After developing in JavaScript/TypeScript for the major part of my university and side projects, I wanted to learn a faster, more low level, compiled language. Since Go is easy to learn, I picked it up for some side projects and wrote the web backend for my bachelors thesis, which focused around web app performance, with the Fiber framework. I worked with the standard library and got into testing soon after. I really enjoyed using Go for it's simplicity, large standard library and fast performance out of the box."
 		},
 		{
 			name: 'Rust',
 			icon: RustLogo,
-			text: "While developing on a side project where I hit the limit of the used tools and languages I made the decision to take a look at Rust. Since it's a steep learning curve it took a few attempts for me to really click with the language but now I absolutely love it. To me the language design checks a lot of boxes and I enjoy writing it, even if the progress is noticeably slower than with other languages. On various projects I worked with the standard library, cargo, async Rust with Tokio, serde and a few web servers. I also used Rust to write my own parser."
+			text: "While developing on a side project where I hit the limit of the used tools and languages I made the decision to take a look at Rust. Since it has a steep learning curve it took a few attempts for me to really click with the language but now I absolutely love it. To me the language design checks a lot of boxes and I enjoy writing it, even if the development speed of Rust is noticeably slower than other languages. On various projects I worked with the standard library, cargo, async Rust with Tokio, serde and a few web server crates. I also used Rust to write my own parser."
 		},
 		{
 			name: 'Java',
 			icon: JavaLogo,
-			text: 'As the first programming language I ever learned, Java has taught me the basics of programming. Starting out with writing plugins for Minecraft servers with the Bukkit API, I continued to develop some small applications with Swing. Later at university Java was taught to make us familiar with concepts like OOP and functional programming. After a pause I picked it up again at weiyu digital GmbH where I learned how to use the Spring framework, how to write tests and how to use Gradle as a build tool.'
+			text: 'As the first programming language I ever learned, Java has taught me the basics of programming. Starting out with writing plugins for Minecraft servers using the Bukkit API, I continued to develop some small applications with Swing. Later at university Java was taught to make us familiar with concepts like OOP and functional programming. After a pause I picked it up again at work where I learned how to use the Spring framework, how to write tests and how to use a build tool.'
 		},
 		{
 			name: 'C++',
@@ -77,7 +78,7 @@
 		{
 			name: 'C',
 			icon: CLogo,
-			text: "The first language I learned in university was C. It was a very interesting experience to learn a language that is so close to the machine. I learned how to use pointers and pointer arithmetics. Although I don't use C anymore, It taught me the basics and I still realize how much it helps to know a low level language like C."
+			text: "The first language I learned in university was C. It was a very interesting experience to learn a language that is so close to the machine. I learned how to use pointers, pointer arithmetics and manual memory management. Although I don't use C anymore, It taught me the basics and I still realize how much it helps to know a low level language like C."
 		}
 	].sort((a, b) => a.name.localeCompare(b.name));
 
@@ -85,13 +86,13 @@
 		{
 			name: 'Express.js',
 			icon: ExpressJSLogo,
-			text: 'As one of the most used web backend frameworks for Node.js, Express was one of the first JS frameworks I got to know. I learned the concepts of a router, how middleware works and how to implement a template based web app. Throughout my projects I used Express to build a few small web APIs.',
+			text: 'As one of the most used web backend frameworks for Node.js, Express was one of the first JavaScript frameworks I got to know. I learned the concepts of a router, how middleware works and how to implement a template based web app. Throughout my projects I used Express to build a few small web APIs.',
 			languages: ['javascript']
 		},
 		{
 			name: 'Firebase',
 			icon: FirebaseLogo,
-			text: "Through one of my favorite development YouTube channels Fireship I learned about Firebase. I really enjoyed the simplicity of the Firebase SDK and the ease of use of the Firebase CLI. I used Firebase to build a multiplayer card game and a native App for collecting and managing ideas and found it's realtime features to be very useful.",
+			text: "Through one of my favorite development YouTube channels Fireship I learned about Firebase. I really enjoyed the simplicity of the Firebase SDK and the ease of use of the Firebase CLI. I used Firebase to build a multiplayer card game and a native app for collecting and managing ideas and found it's realtime features to be very useful.",
 			languages: ['javascript', 'typescript']
 		},
 		{
@@ -103,25 +104,25 @@
 		{
 			name: 'Cypress',
 			icon: CypressLogo,
-			text: 'During my time working as a fullstack developer at weiyu digital GmbH I learned about Cypress. I was tasked to write e2e tests for quite a big web app under time pressure. Before I suggested Cypress, the team used Protractor to write e2e tests for their apps. I had to convince the CTO of our customer and my boss to make the switch to Cypress. As it turned out, Cypress was the right tool for the choice and the tests could be implemented within the set deadline. I appreciated the tooling and extensive docs of Cypress.',
+			text: 'During my time working as a fullstack developer at weiyu digital GmbH I learned about Cypress. I was tasked to write e2e tests for quite a big web app under time pressure. Before I suggested Cypress, the team used Protractor to write e2e tests for their Angular apps. I had to convince the CTO of our client and my boss to make the switch to Cypress. As it turned out, Cypress was the right tool for the job and the tests could be implemented within the set deadline. I appreciated the tooling and extensive docs of Cypress.',
 			languages: ['javascript']
 		},
 		{
 			name: 'Angular',
 			icon: AngularLogo,
-			text: "As the first Component frontend framework I learned, Angular taught me the basics of web development with a component based frontend framework. I learned how to use the Angular CLI, how to write components, how to use the Angular Material UI library and how client side routing works. Even though I don't use Angular anymore it was a good framework to learn the basics. During my time at weiyu digital GmbH I used Angular in a professional context.",
+			text: "As the first one I learned, Angular taught me the basics of web development with a component based frontend framework. I learned how to use the Angular CLI, how to write components, how to use the Angular Material UI library and how client side routing works. Even though I don't use Angular anymore it was a good framework to learn the basics. During my time at weiyu digital GmbH I used Angular in a professional context.",
 			languages: ['typescript']
 		},
 		{
 			name: 'Puppeteer',
 			icon: PuppeteerLogo,
-			text: 'As one of the most flexible and capable tools when it comes to webscraping I used puppeteer in a few side projects which required not only the visit but also the automated interaction with web pages.',
+			text: 'As one of the most flexible and capable tools when it comes to webscraping I used puppeteer in a few side projects which required not only the fetching of plain HTML but also automated interaction with UI elements and execution of JavaScript on web pages.',
 			languages: ['javascript', 'typescript']
 		},
 		{
 			name: 'Socket.io',
 			icon: SocketioLogo,
-			text: 'For various small projects and a web based game I developed I used Socket.io to implement realtime communication between the client and the server. The ease of use, fallback mechanisms and extra features like rooms make it a very enjoyable tool to use whenever it comes to realtime apps.',
+			text: 'For various small projects and a web based game I developed I used Socket.io to implement realtime communication between the client and the server. The ease of use, fallback mechanisms and extra features like rooms make it a very enjoyable tool to use whenever it comes to realtime web apps.',
 			languages: ['javascript', 'typescript']
 		},
 		{
@@ -145,13 +146,13 @@
 		{
 			name: 'Tokio',
 			icon: TokioLogo,
-			text: "When it comes to async Rust, Tokio is the most used and most popular runtime. Therefore when I learned async Rust I encountered Tokio along the way. I initially found async Rust and Tokio hard to learn, but after digging into it I really liked working with it since it abstracts away the tough parts of writing an async program. I've used Tokio in a few projects already and are very happy with its features and performance. Coming from Go I especially like the Tokio channels for passing data between async contexts.",
+			text: "When it comes to async Rust, Tokio is the most used and most popular runtime. Therefore when I learned async Rust I encountered Tokio along the way. I initially found async Rust and Tokio hard to learn, but after digging into it I really liked working with it since it abstracts away the tough parts of writing an async program. I've used Tokio in a few projects already and am very happy with its features and performance. Coming from Go I especially like the Tokio channels for passing data between async contexts.",
 			languages: ['rust']
 		},
 		{
 			name: 'React',
 			icon: ReactLogo,
-			text: 'As it is the most popular component framework I learned React while implementing a few side and university projects. I liked the huge ecosystem and community that comes with React, which make it very easy to get going. I also worked on a React Native project with Expo during university, it was impressive how easy it is to develop an application for multiple platforms with the same tool.',
+			text: 'As it is the most popular component framework I learned React while implementing a few side and university projects. I liked the huge ecosystem and community that comes with React, which make it very easy to get going. I also worked on a React Native project with Expo in university, it was impressive how easy it is to develop an application for multiple platforms with the same tool.',
 			languages: ['javascript', 'typescript']
 		},
 		{
@@ -211,7 +212,7 @@
 		{
 			name: 'Protractor',
 			icon: ProtractorLogo,
-			text: 'At my work as a full stack developer I have been tasked to e2e test an Angular app for a client. Before the switch to Cypress I used Protractor to write the tests. The original tests were written in plain JS. I converted the project into a TypeScript project and implemented a new, cleaner project structure. At the end of a full month of writing tests, all of the core workflows of the app were covered.',
+			text: 'At my work as a full stack developer I have been tasked to e2e test an Angular app for a client. Before the switch to Cypress I used Protractor to write the tests. The original tests were written in plain JavaScript. I converted the project into a TypeScript project and implemented a new, cleaner structure. At the end of a full month of writing tests, all of the core workflows of the app were covered.',
 			languages: ['typescript']
 		},
 		{
@@ -223,7 +224,7 @@
 		{
 			name: 'Cloudflare',
 			icon: CloudIcon,
-			text: "When it comes to hosting, protecting and administrating websites, Cloudflare is my go to service provider. I use it for it's simplicity and security features. For accessing my selfhosted services I use Clouflares tunnel service which allows easy access to my home server.",
+			text: "When it comes to hosting, protecting and administrating websites, Cloudflare is my go to service provider. I use it for it's simplicity and security features. For accessing my selfhosted services I use Clouflares Tunnel service which allows easy access to my home server.",
 			languages: []
 		},
 		{
@@ -271,7 +272,7 @@
 		{
 			name: 'Three.js',
 			icon: ThreeJSLogo,
-			text: 'For two projects at university I used 3D frameworks. Besides Babylon.js, Three.js/React Three Fiber were used to implement a draggable car as a control concept for a self-driving car.',
+			text: 'For two projects at university I used 3D frameworks. Besides some simpler practice tasks in Babylon.js, I used Three.js/React Three Fiber to implement a draggable car as a control concept for a self-driving car.',
 			languages: ['javascript', 'typescript']
 		},
 		{
@@ -291,6 +292,12 @@
 			icon: BootstrapLogo,
 			text: 'While learning web development I used Bootstraps pre made components throughout various projects. The utility classes Bootstrap offered were very helpful and I familiarized myself with the concept of having utility classes instead of custom writing styles for every occurrence.',
 			languages: ['javascript']
+		},
+		{
+			name: 'Docker',
+			icon: PackageIcon,
+			text: 'When hosting services of any kind I tent to use Docker to containerize them. In combination with a GUI like Portainer I think it makes the process of administering different services on one machine a lot easier. Almost all of my selfhosted projects use Docker(-compose).',
+			languages: []
 		}
 	].sort((a, b) => a.name.localeCompare(b.name));
 
