@@ -23,10 +23,10 @@
 	import GORMLogo from '../images/GORM-logo.svg';
 	import PostgresLogo from '../images/postgres-logo.svg';
 	import CloudIcon from '../icons/cloud.svg';
+	import SquareIcon from '../icons/square.svg';
 	import CoffeeIcon from '../icons/coffee.svg';
 	import GitHubLogo from '../icons/dark-github.svg';
 	import NodejsLogo from '../images/nodejs-logo.svg';
-	import SpigotLogo from '../images/spigot-logo.png';
 	import SelfhostedLogo from '../images/selfhosted.svg';
 	import ProtractorLogo from '../images/protractor-logo.svg';
 	import gRPCLogo from '../images/grpc-logo.svg';
@@ -199,7 +199,7 @@
 		},
 		{
 			name: 'Spigot',
-			icon: SpigotLogo,
+			icon: SquareIcon,
 			text: 'I found my way into programming through Minecraft and the CraftBukkit/Spigot project by writing my own plugins for a Minecraft server. I spent countless hours in the game and learned the basics of programming by implementing administrative and minigame plugins to create a unique experience for the players of my server. It was a lot of fun and I still benefit of the things I learned back then.',
 			languages: ['java']
 		},
